@@ -3,7 +3,7 @@
 ### First and Last Name: Konstantinos Karyotis
 ### University Registration Number: dpsd19049
 ### GitHub Personal Profile: https://github.com/dpsd19049
-### Augmented Reality Personal Repository: dpsd19049.github.io/augmented-reality/
+### Augmented Reality Personal Repository: https://dpsd19049.github.io/augmented-reality/
 
 # Introduction
 
