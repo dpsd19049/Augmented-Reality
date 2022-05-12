@@ -22,8 +22,7 @@
          
 		<a-assets>
 	            <img id="my-image" src="assets/dpsdpp.jpg">
-		    <img id="hydrogen" src="assets/pattern-card-H.png">
-                    <img id="oxygen" src="assets/pattern-card-O.png">
+		    
 	       </a-assets>
 		
 		
@@ -61,7 +60,7 @@
 		  </a-marker>
 		    
 		    <a-marker id="hyd" preset='custom' type='pattern' url='/assets/pattern-card-H.patt'>       
-                    <a-image src="#hydrogen" width="1" height="1" rotation="-90 0 0" position="0 -1 0"></a-image>
+                     <a-image id="hydro" src="/assets/card-H.png" width="1" height="1" rotation="180 0 0" position="0 0 0"></a-image>
 <a-entity gltf-model="/assets/hydrogen3d.glb" position="0 1 0" scale="1.09 1.09 1.09" animation__rotate = "property: rotation; dur: 5000; easing: linear; dir: normal; from:0 0 0; to: 360 0 0; loop: true;" animation-mixer="clip: *; loop: repeat; timeScale: 1.5;">
           </a-entity>
 		    </a-marker>
