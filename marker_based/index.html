@@ -21,16 +21,8 @@
 
 
 <body style="margin : 0px; overflow: hidden;">
-    <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded
-        arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
-
-
-
-        <a-assets>
-            <img id="my-image" src="/assets/dpsdpp.jpg">
-        </a-assets>
-
-        <script>
+    
+     <script>
 
             AFRAME.registerComponent("marker-distance", {
                 init: function () {
@@ -76,6 +68,16 @@
             });
 
         </script>
+    <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded
+        arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
+
+
+
+        <a-assets>
+            <img id="my-image" src="/assets/dpsdpp.jpg">
+        </a-assets>
+
+      
 
 
         <a-marker preset="hiro">
