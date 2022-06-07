@@ -12,8 +12,8 @@
 			init: function() {
 			let toggle = false
 			  this.el.addEventListener("click", (e) => {
-				let box = document.querySelectorAll(".clickable")
-				box.forEach(function(el) {
+				let entity = document.querySelectorAll(".clickable")
+				entity.forEach(function(el) {
 					el.setAttribute("visible", toggle)
 				})
 				toggle = !toggle
