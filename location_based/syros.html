@@ -5,6 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>GeoAR.js demo</title>
     <script src='https://aframe.io/releases/0.9.2/aframe.min.js'></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
    <!-- <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>-->
     <script src='build/aframe-ar-nft.js'></script>
 </head>
@@ -15,16 +16,14 @@
 		embedded
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
 
-	    <a-assets>
-             <img id="tsiropina" src="assets/magnemite/tsiropina.jpg">
-            </a-assets>
-	    
-	    
-        <a-entity gps-entity-place="latitude: 37.387744; longitude: 24.888832;" 
-		  <a-image src="#tsiropina" position="0 1 -6" rotation="-5 0 0"></a-image>
-		  </a-entity>
         
-        
-        <a-camera  rotation-reader</a-camera>
+        <a-entity gps-entity-place="latitude: 37.387744; longitude: 24.888832;" rotation="0 180 0">
+          <a-text value="Tsiropina" align="center" position="0 -0.50 0" side="double"></a-text>
+          <a-image src="assets/magnemite/tsiropina.jpg" position="0 0 0" side="double" width="1" height="1"></a-image>/>
+        </a-entity>
+
+
+
+        <a-camera gps-camera rotation-reader></a-camera>
 	</a-scene>
 </body>
